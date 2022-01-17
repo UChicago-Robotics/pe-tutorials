@@ -43,6 +43,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'wallstopper = wallstopper.stop_at_wall:main'
         ],
     },
 )
