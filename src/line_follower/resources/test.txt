@@ -1,1 +1,0 @@
-Your line_follower.py script will do in this folder.
