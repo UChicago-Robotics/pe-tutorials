@@ -25,7 +25,7 @@ class LineFollower(Node):
 
     def image_callback(self, msg):
         curr_time = self.get_clock().now()
-        delta = curr_time - self.last_time
+        delta = curr_time if self.last_time is None else (curr_time - self.last_time)
 
         image = self.bridge.imgmsg_to_cv2(msg,desired_encoding='bgr8')
 
